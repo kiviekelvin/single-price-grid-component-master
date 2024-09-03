@@ -1,0 +1,96 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-family: karla;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #beb6b6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.item-1 {
+    background-color: hsl(179, 62%, 43%);
+    color: #FFFFE0;
+    padding: 10px 40px 0px;
+}
+
+/* Stacked Layout for Mobile Devices */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.full_body {
+    font-family: karla;
+    width: 50%;  
+    background-color: #FFFFE0;
+    padding: 0;
+}
+
+.top_part {
+    padding: 10px 30px;
+    color: rgba(0, 0, 0, 0.397);
+}
+
+.top_part h1 {
+    color: hsl(179, 62%, 43%);
+    padding: 15px auto;
+}
+
+.top_part h2 {
+    color: hsl(71, 73%, 54%);
+    padding: 10px auto;
+}
+
+.dollar {
+    font-size: 28px;
+    font-weight: 700;
+} 
+
+.small_text {
+    color: #f8f8f8c2;
+    font-size: 0.8em;
+}
+
+.item-2 {
+    background-color: hsl(179, 53%, 57%);
+    color: #FFFFE0;
+    padding: 10px 40px;
+}
+
+.item-2 p {
+    color: #f8f8f8c2;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 0.9;
+}
+
+.signup_button:hover {
+    background-color: hsla(71, 73%, 54%, 0.829);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.signup_button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10% 0px;
+    font-size: 16px;
+    background-color: hsl(71, 73%, 54%);
+    color: #FFFFE0;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+    text-align: center;
+}
