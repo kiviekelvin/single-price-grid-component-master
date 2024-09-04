@@ -5,13 +5,14 @@ body {
     font-family: karla;
     font-size: 16px;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     width: 100vw;
     height: 100vh;
     background-color: #beb6b6;
 }
 
 .container {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr; 
 }
@@ -27,23 +28,35 @@ body {
     .container {
         grid-template-columns: 1fr; 
     }
+
+    .full_body {
+        min-height: 600px;
+        min-width: 90%;
+    }
+
 }
 
 .full_body {
     font-family: karla;
-    width: 50%;  
+    height: 70%;
+    width: 90%;  
     background-color: #FFFFE0;
     padding: 0;
+    max-width: 900px;
 }
 
 .top_part {
     padding: 10px 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto;
+    height: auto;
     color: rgba(0, 0, 0, 0.397);
 }
 
 .top_part h1 {
     color: hsl(179, 62%, 43%);
-    padding: 15px auto;
+    /*padding: 15px auto;*/
 }
 
 .top_part h2 {
@@ -58,7 +71,7 @@ body {
 
 .small_text {
     color: #f8f8f8c2;
-    font-size: 0.8em;
+    font-size: 0.5em;
 }
 
 .item-2 {
